@@ -22,6 +22,7 @@ import { HomeComponent } from './home/home.compoment';
         { path: '', redirectTo: 'home', pathMatch: 'full'},
         { path: 'welcome', component: WelcomeComponent , pathMatch: 'full'},
         { path: '**', redirectTo: 'welcome', pathMatch: 'full'}
+        
     ]),
     ProductModule
   ],

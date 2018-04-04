@@ -7,6 +7,7 @@ import { ProductComponent } from './product/product.component';
 import { ProtectedComponent } from './protected/protected.component';
 import { AboutComponent } from './about/about.component';
 import { LoginGuard } from './service/login.guard';
+import { CustomerComponent } from "./customer/customer.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'products', component: ProductComponent },
   { path: 'protected', component: ProtectedComponent, canActivate: [LoginGuard] },
   { path: 'about', component: AboutComponent },
+  { path: 'customer', component: CustomerComponent },
 ];
 
 @NgModule({

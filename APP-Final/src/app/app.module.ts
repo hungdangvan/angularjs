@@ -13,6 +13,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { LoginGuard } from './service/login.guard'
 import { AuthService } from './service/auth.service';
+import { CustomerComponent } from './customer/customer.component';
+import { ReactiveFormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
 
 
 @NgModule({
@@ -23,11 +26,14 @@ import { AuthService } from './service/auth.service';
     HomeComponent,
     LoginComponent,
     ProductComponent,
-    ProtectedComponent
+    ProtectedComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [ AuthService,
     LoginGuard],

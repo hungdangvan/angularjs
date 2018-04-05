@@ -14,8 +14,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginGuard } from './service/login.guard'
 import { AuthService } from './service/auth.service';
 import { CustomerComponent } from './customer/customer.component';
-import { ReactiveFormsModule } from "@angular/forms";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
+import { TemplateformComponent } from './templateform/templateform.component';
 
 
 @NgModule({
@@ -27,12 +28,14 @@ import { CommonModule } from "@angular/common";
     LoginComponent,
     ProductComponent,
     ProtectedComponent,
-    CustomerComponent
+    CustomerComponent,
+    TemplateformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     CommonModule
   ],
   providers: [ AuthService,

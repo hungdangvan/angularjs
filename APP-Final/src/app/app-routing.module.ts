@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { LoginGuard } from './service/login.guard';
 import { CustomerComponent } from "./customer/customer.component";
 import { TemplateformComponent } from './templateform/templateform.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'customer', component: CustomerComponent },
   { path: 'template-form', component: TemplateformComponent },
+  { path: 'reactive-form', component: ReactiveformComponent },
 ];
 
 @NgModule({

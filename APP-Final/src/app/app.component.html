@@ -1,6 +1,10 @@
 <div class="page-header">
   <div class="container">
-    <h1>{{title}}</h1>
+      <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="favicon.ico" width="30" height="30" alt="">
+          </a>
+        </nav>
     <div class="navLinks">
       <a [routerLink]="['/home']">Home</a>
       <a [routerLink]="['/about']">About Us</a>
@@ -11,6 +15,8 @@
       <a [routerLink]="['/protected']">Protected</a>
       <a [routerLink]="['/customer']">Customer</a>
       <a [routerLink]="['/template-form']">template-form</a>
+
+      <a [routerLink]="['/reactive-form']">reactive-form</a>
     </div>
   </div>
 </div>

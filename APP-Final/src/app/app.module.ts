@@ -17,6 +17,7 @@ import { CustomerComponent } from './customer/customer.component';
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { TemplateformComponent } from './templateform/templateform.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { TemplateformComponent } from './templateform/templateform.component';
     ProductComponent,
     ProtectedComponent,
     CustomerComponent,
-    TemplateformComponent
+    TemplateformComponent,
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,
